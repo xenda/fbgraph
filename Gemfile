@@ -3,11 +3,12 @@ source "http://rubygems.org"
 
 gem "activesupport"
 gem "hashie"
-gem "oauth2"
+gem "oauth2", :git => "https://github.com/intridea/oauth2.git"
 gem "json"
 gem "rest-client", :require => "rest_client"
 gem "i18n"
-gem "typhoeus"
+# gem "typhoeus"
+gem 'xenda-typhoeus' #, :path => "/Users/alvaropereyrarabanal/Development/typhoeus"
 
 group :development do
   gem "jeweler"
