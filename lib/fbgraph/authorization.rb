@@ -14,8 +14,7 @@ module FBGraph
 
     def process_callback(code, options = {})
       options = { :redirect_uri => FBGraph.config[:canvas_url] }.merge(options)
-      ws = @client.oauth_client.web_server
-      @client.auth = ws.get_access_token(code, options)
+      @client.auth = @client.oauth_client.web_server.get_access_token(code, options)
       @client.access_token = @client.auth.token
     end
     
