@@ -3,7 +3,7 @@ source "http://rubygems.org"
 
 gem "activesupport"
 gem "hashie"
-gem "oauth2", :git => "git://github.com:xenda/oauth2.git", :branch => "xenda_fix"
+gem "oauth2", :git => "git://github.com/xenda/oauth2.git", :branch => "xenda_fix"
 gem "json"
 gem "rest-client", :require => "rest_client"
 gem "i18n"
